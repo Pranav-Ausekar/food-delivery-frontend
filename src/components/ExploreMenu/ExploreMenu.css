@@ -1,0 +1,112 @@
+.explore-menu {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-size: 35px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.explore-menu-text {
+    text-align: center;
+    max-width: 60%;
+    color: #808080;
+    font-size: 18px;
+}
+
+.explore-menu-list {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    max-width: 80vw;
+}
+
+.explore-menu-list-item {
+    flex-shrink: 0;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: 4px 4px 10px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.explore-menu-list-item img:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+.explore-menu-list-item p {
+    margin-top: 15px;
+    color: #747474;
+    font-size: max(1.5vw, 16);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.explore-menu hr {
+    width: 100%;
+    margin: 10px 0px;
+    height: 3px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.explore-menu-list-item .active {
+    /* border: 4px solid tomato; */
+    border: 3px solid gray;
+    padding: 2px;
+}
+
+@media (max-width:1050px) {
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .explore-menu-list {
+        gap: 0px;
+    }
+
+    .explore-menu-list-item {
+        min-width: 130px;
+    }
+}
+
+@media (max-width:450px) {
+    .explore-menu-list-item {
+        min-width: 110px;
+    }
+}
+
+@media (max-width:360px) {
+    .explore-menu h1 {
+        font-size: 28px;
+    }
+}

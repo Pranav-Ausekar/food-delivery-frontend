@@ -1,0 +1,29 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-display h2 {
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width:360px) {
+    .food-display h2 {
+        font-size: 28px;
+    }
+}
